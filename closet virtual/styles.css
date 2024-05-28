@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.closet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #1714b4;
+    border: 2px solid #000000;
+}
+
+.door {
+    position: absolute;
+    top: 0;
+    width: 49.8%;
+    height: 100%;
+    background-color: #260cbd;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    border: 1px solid #000000;
+}
+
+.grip-left {
+    position: absolute;
+    background-color: rgb(43, 1, 1);
+    width: 5px;
+    height: 20px;
+    border-radius: 50px;
+    right: 3px;
+    bottom: 50%;
+}
+
+.left-door {
+    left: 0;
+    transform-origin: left;
+}
+
+.grip-right {
+    position: absolute;
+    background-color: rgb(43, 1, 1);
+    width: 5px;
+    height: 20px;
+    border-radius: 50px;
+    left: 3px;
+    bottom: 50%;
+}
+
+.right-door {
+    right: 0;
+    transform-origin: right;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.slot {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: #071d66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+
+    & > img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /*Estudar*/
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modalContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    left: 170px;
+    background-color: #f0f0f0;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 900px;
+    height: 90px;
+    opacity: 90%;
+    user-select: none;
+}
